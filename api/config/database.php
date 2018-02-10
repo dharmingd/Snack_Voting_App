@@ -1,11 +1,12 @@
 <?php
 	
 class Database{
-
-	private $host = "localhost";
-	private $db_name = "id4695839_snack_voting_app";
-	private $username = "id4695839_snack_voting_appuser";
-	private $password = "snack_voting_appPassword";
+	
+	//Following parameters are as per your server configuration
+	private $host = "#####";
+	private $db_name = "#####";
+	private $username = "#####";
+	private $password = "#####";
 	public $connection;
 
 	public function getConnection(){
