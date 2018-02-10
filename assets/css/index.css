@@ -1,0 +1,392 @@
+body{
+	margin:0;
+	padding:0;
+	height: 100%;
+	font-family: 'Signika', sans-serif;
+}
+a{
+	margin:0;
+	padding: 0;
+}
+
+div{
+	margin:0;
+	padding: 0;
+}
+
+.image{
+	margin: auto;
+	width:50%;
+	text-align: center;
+	margin-top: 40px;
+
+}
+
+.imageInside{
+	width:250px;
+	height: auto;
+	-webkit-transition: all 2s linear;
+    transition: all 0.4s linear;
+}
+
+.title{
+	margin:auto;
+	width:50%;
+	text-align: center;
+	margin-top: 0px;
+	font-size: 3.5em;
+	color: #EF5350;
+	-webkit-transition: all 2s linear;
+    transition: all 0.4s linear;
+}
+
+.subtitle{
+	margin:auto;
+	width:50%;
+	text-align: center;
+	margin-top: 0px;
+	font-size: 1.1em;
+	color: #78909C;
+	font-style: italic;
+	font-family: 'Satisfy', cursive;
+	-webkit-transition: all 2s linear;
+    transition: all 0.4s linear;
+}
+
+.userNameDivOuter{
+	margin:auto;
+	width: 30%;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.userNameDiv{
+	
+	width: 100%;
+ 	display:inline-block;
+    position:relative;
+    height: 60px;
+}
+
+
+.userNameTextBox{
+	position:absolute;
+	left:0;
+	border:1px solid #EF5350;
+	background-color:transparent;
+    height: 100%;
+    width: 80%;
+    padding-left: 20px;
+    color: #EF5350;
+    font-size: 1em;
+    font-family: 'Signika', sans-serif;
+    -webkit-transition: all 2s linear;
+    transition: all 0.4s linear;
+}
+
+.userNameTextBox:focus{
+	border:1px solid #EF5350;
+	border-left: 20px solid #EF5350;
+	outline: none;
+	font-weight: bold;
+	 font-size: 1.1em;
+}
+
+.userNameBtn{
+	position:absolute;
+	right: 0;
+    background-color: #EF5350;
+    height: 100%;
+    width: 20%;
+    border:0;
+    color: white;
+    padding: 5px;
+}
+
+.userNameBtn:hover{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.userNameBtn:active{
+	text-decoration: none;
+	color: white;
+}
+
+.fa-angle-right{
+	font-size: 50px;
+}
+
+.textboxSubtitle{
+	color: #78909C;
+}
+
+
+
+.mystyle1{
+	width: 125px;
+}
+
+.mystyle2{
+	font-size: 3em;
+}
+
+.mystyle3{
+	font-size: 0.8em;
+}
+
+.updateVoteDiv{
+	margin:auto;
+	width: 20%;
+	text-align: center;
+	margin-top: 20px;
+	//position: relative;
+	//height: 50px;
+
+}
+
+.updateVoteDivInner{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	margin-bottom: 20px;
+}
+
+.updateVoteBtn{
+	position: absolute;
+	left:0;
+	outline: none;
+	border:none;
+	width: 70%;
+	height: 100%;
+	margin-bottom: 20px;
+	background: none;
+	border:none;
+	//border:1.2px solid #EF5350;
+	background-color: #EF5350;
+	color: white;
+	font-size: 1.1em;
+	cursor: pointer;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	 -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+}
+
+
+.disableupdateVoteBtn{
+	position: absolute;
+	left:0;
+	outline: none;
+	border:none;
+	width: 70%;
+	height: 100%;
+	margin-bottom: 20px;
+	background: none;
+	border:none;
+	//border:1.2px solid #EF5350;
+	background-color: #EF5350;
+	color: white;
+	font-size: 1.1em;
+	cursor: pointer;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	 -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+}
+
+.updateVoteBtn:hover{
+	border:1px solid #EF5350;
+	color: #EF5350;
+	background:none;
+
+}
+
+.specBtn{
+	background-color: #00C853;
+	 -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.specBtn:hover{
+	background-color: #00C853;
+	border:1px solid #00C853;
+	color:white;
+}
+
+button:disabled{
+	cursor: not-allowed;
+}
+
+
+.updateVoteBtn:disabled .updateVoteBtn:hover{
+	cursor: not-allowed;
+	background-color: #EF5350;
+	color: white;
+}
+
+.updateVoteTextBox{
+	position: absolute;
+	border:1px solid #EF5350;
+	text-align: center;
+	font-size: 2em;
+	color: #EF5350;
+	right: 0%;
+	width: 30%;
+	height: 100%;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.updateVoteTextBox:hover{
+	cursor: default;
+}
+.specTextBox{
+	border:1px solid #00C853;
+	color: #00E676;
+}
+
+
+.logout{
+	position: absolute;
+	right: 5%;
+	top:15px;
+	border: 1px solid #EF5350;
+	background:#EF5350;
+	color:white;
+	border-radius: 10px;
+	padding:10px;
+	padding-left:20px;
+	padding-right: 20px;
+	font-size: 1.2em;
+	cursor: pointer;
+	 -webkit-transition: all 2s linear;
+    transition: all 0.4s linear;
+}
+
+.logout:hover{
+	background-color: white;
+	border:1px solid #EF5350;
+	color: #EF5350;
+}
+
+.voteMessage{
+	margin:auto;
+	width: 50%;
+	margin-top: 25px;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.voteMessageGreen{
+	color:#00C853;
+}
+
+.voteMessageYellow{
+	color:#FFB300;
+}
+@media only screen and (max-width: 1200px) {
+
+   .title{
+		width:70%;
+		margin-top: 5px;
+		font-size: 3.5em;
+	}
+
+	.updateVoteDiv{
+		width:30%;
+	}
+
+	.mystyle2{
+		font-size: 3em;
+	}
+
+	.mystyle3{
+		font-size: 0.8em;
+	}
+	
+}
+
+@media only screen and (max-width: 857px) {
+
+   .title{
+		width:80%;
+		margin-top: 5px;
+		font-size: 3.5em;
+	}
+
+	.updateVoteDiv{
+		width:40%;
+	}
+
+	.mystyle2{
+		font-size: 2.8em;
+	}
+
+	.mystyle3{
+		font-size: 0.8em;
+	}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+	.image{
+		width:70%;
+	}
+
+	.imageInside{
+		width:180px;
+	}
+
+   .title{
+		width:70%;
+		margin-top: 10px;
+		font-size: 2em;
+	}
+	.subtitle{
+		margin:auto;
+		width:90%;
+		text-align: center;
+		margin-top: 10px;
+		font-size: 1.1em;
+		color: #78909C;
+		font-style: italic;
+		font-family: 'Satisfy', cursive;
+	}
+
+	.updateVoteDiv{
+		width:40%;
+	}
+
+	.userNameDivOuter{
+		width: 40%;
+	}
+
+	.mystyle3{
+		font-size: 0.8em;
+	}
+
+}
+
+
+@media only screen and (max-width: 460px){
+
+	.userNameDivOuter{
+		width:70%;
+	}
+
+	.mystyle3{
+		font-size: 0.8em;
+	}
+
+}
+
+@media only screen and (max-width: 370px){
+
+	.userNameDivOuter{
+		width:80%;
+	}
+}

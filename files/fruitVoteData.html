@@ -1,0 +1,21 @@
+<div ng-show="gotDataFromServer">
+	<div ng-show="!disable" class="animated bounceIn voteMessage voteMessageYellow">
+				Choose from the following options
+	</div>
+	<div ng-show="alreadyVoteMessage" class="animated bounceIn voteMessage voteMessageGreen" >
+				You have already voted for {{userVote[0].FruitName}}
+	</div>
+	<div ng-show="voteMessage" class="animated bounceIn voteMessage voteMessageGreen">
+				You have successfully voted for {{fruitName}}	
+	</div>	
+	<div class="updateVoteDiv animated bounceIn">
+
+			<div ng-repeat="data in fruitVoteCount | orderBy : 'VoteCount' : true">
+				<div class="updateVoteDivInner">
+					<button ng-click="updateVote2(data.FruitName)" ng-disabled="disable"  ng-class="{updateVoteBtn: !disable, disableupdateVoteBtn:disable, specBtn: {{data.FruitName}}}" >{{data.FruitName}}</button>
+				<input type="text" readonly="readonly" ng-model="data.VoteCount" ng-class="{updateVoteTextBox: true, specTextBox: {{data.FruitName}}}" />
+				</div>
+			</div>
+	</div>
+	<button ng-click="logout()" class="logout">Logout {{userVote[0].UserName}}</button>
+</div>

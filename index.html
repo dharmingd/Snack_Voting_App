@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html ng-app="snackVotingApp">
+	<head>
+		<meta charset="utf-8">
+		<title>Snack Voting App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/index.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+
+	</head>
+
+	<body>
+
+		<div class="image animated slideInDown">
+			<img src="assets/images/fruits.jpg" class="imageInside" id="imageInside"/>
+		</div>
+
+
+		<div class="title animated slideInLeft" id="title">Snack Voting Application</div>
+		<div class="subtitle animated slideInRight" id="subtitle">Healthier Food, Healthier Life. Choose your options from Apple, Orange, Banana and, Pineapple</div>
+
+		<ng-view></ng-view>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js"></script>
+		<script src="assets/js/index.js"></script>
+		<script src="assets/js/routers/route.js"></script>
+		<script src="assets/js/factories/readFruitVoteCount.factory.js"></script>
+		<script src="assets/js/factories/readUserVote.factory.js"></script>
+		<script src="assets/js/factories/updateFruitVoteCount.factory.js"></script>
+		<script src="assets/js/factories/updateUserVote.factory.js"></script>
+		<script src="assets/js/factories/addNewUser.factory.js"></script>		
+		<script src="assets/js/controllers/readFruitVoteCount.controller.js"></script>
+		<script src="assets/js/controllers/userName.controller.js"></script>
+
+	</body>
+</html>
